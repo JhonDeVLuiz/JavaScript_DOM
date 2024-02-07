@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-left:0px;
+            }
+            .animeEsquerda{
+                transition: 1s;
+                margin-left: 90px;
+                margin-top: 90px;
+                background-color:#55DD33 ;
+            }
+        </style>
+        <div class="box"></div>
+        <script>
+         var box = document.querySelectorAll('box')[0];
+        setTimeout(()=>{
+         box.classList.add('animeEsquerda')
+        },1000);
+         
+        </script>
+    </body>
+</html>
